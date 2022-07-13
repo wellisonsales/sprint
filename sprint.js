@@ -1,11 +1,29 @@
 
 import readlineSync from "readline-sync";
 
-let propriedadeCss = readlineSync.question("digite uma propriedade CSS:");
-console.log("você digitou " + propriedadeCss);
+let usuario = [];
 
-let fontSize = readlineSync.question("ok, agora digite um valor para sua fonte:");
-console.log("O tamanho da sua fonte será " + fontSize);
+while(true){
 
-let textAlign = readlineSync.question("otimo tamanho, agora, digite o alinhamento do texto: ");
-console.log("O alinhamento será " + textAlign);
+        const name = readlineSync.question("digite seu nome ou apelido:")
+        console.log("hmm..seu nome é " + name);
+
+        const propriedadeCss = readlineSync.question("agora, " + name + ", digite uma propriedade CSS:");
+
+        const checkpoint = readlineSync.question("Vc digitou:" + propriedadeCss + " esta certo?");
+
+            if (checkpoint === 'sim') {
+                usuario.push(propriedadeCss);
+                break;
+            } else { 
+                console.log("poxa que pena amore, tente novamente!");
+                break;
+            };
+
+        };
+
+    const final = propriedadeCss.sort ((a,b)=>{
+        return a.localeCompare(b);
+})
+
+console.log("aqui está a sua lista: " + final)
