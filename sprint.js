@@ -1,16 +1,5 @@
 
 import readlineSync from "readline-sync";
 
-let propriedades = [];
-
-while (true) {
-    
-    const input = readlineSync.question('Qual seu nome?');
-
-    if (!nome){
-        console.log ("digite um valor,por favor.");
-        return;
-    }
- 
-}
-
+let firstName = readlineSync.question("Insira um valor para teste:");
+console.log("você digitou" + firstName);

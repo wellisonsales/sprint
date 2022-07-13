@@ -1,26 +1,4 @@
 {
-  "name": "sprint",
-  "version": "1.0.0",
-  "description": "atividade para resilia",
-  "main": "sprint.js",
-  "scripts": {
-    "test": "echo \"Error: no test specified\" && exit 1"
-  },
-  "repository": {
-    "type": "git",
-    "url": "git+https://github.com/wellisonsales/node_sprint.git"
-  },
-  "keywords": [
-    "atividade",
-    "sprint",
-    "resilia"
-  ],
-  "author": "wellisonsales",
-  "license": "ISC",
-  "bugs": {
-    "url": "https://github.com/wellisonsales/node_sprint/issues"
-  },
-  "homepage": "https://github.com/wellisonsales/node_sprint#readme",
   "dependencies": {
     "readline-sync": "^1.4.10"
   }, "type": "module"
