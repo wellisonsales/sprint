@@ -1,8 +1,6 @@
 
 import readlineSync from "readline-sync";
 
-let usuario = [];
-
 while(true){
 
         const name = readlineSync.question("digite seu nome ou apelido:")
@@ -16,7 +14,7 @@ while(true){
                 usuario.push(propriedadeCss);
                 break;
             } else { 
-                console.log("poxa que pena amore, tente novamente!");
+                console.log("poxa, tente novamente!");
                 break;
             };
 
