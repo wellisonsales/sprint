@@ -1,4 +1,3 @@
-import prompt from 'prompt-sync'
 
-
+import readlineSync from "readlineSync"
 
